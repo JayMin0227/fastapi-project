@@ -19,7 +19,7 @@ class Idea(Base):
     __tablename__ = "ideas"
 
     id: Mapped[int] = Column(Integer, primary_key=True, autoincrement=True)  # IDをプライマリキーとして追加
-    created_at: Mapped[datetime] = Column(DateTime, default=get_jst_now)  # JST に変更
+    created_at: Mapped[datetime] = Column(DateTime, default=get_jst_now)  # JST に変更 はい
     title: Mapped[str] = Column(Text, nullable=False)
     content: Mapped[str] = Column(Text, nullable=False)
     tags: Mapped[str] = Column(Text, nullable=True)
